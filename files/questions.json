@@ -1,18 +1,892 @@
 [
   {
     "id": 1,
-    "text": "What is the capital of France?",
-    "options": ["London", "Berlin", "Paris", "Madrid"],
-    "correct_answer": "Paris",
-    "category": "Geography",
+    "text": "What is InfluxDB primarily designed for?",
+    "options": [
+      "Document storage",
+      "Time-series data",
+      "Graph data",
+      "Key-value pairs"
+    ],
+    "correct_answer": "Time-series data",
+    "category": "Basics",
     "difficulty": "Easy"
   },
   {
     "id": 2,
-    "text": "Which planet is closest to the Sun?",
-    "options": ["Venus", "Mercury", "Mars", "Earth"],
-    "correct_answer": "Mercury",
-    "category": "Science",
+    "text": "Which of these is NOT a key feature of InfluxDB?",
+    "options": [
+      "Open source",
+      "NoSQL database",
+      "ACID compliance",
+      "Massive scalability"
+    ],
+    "correct_answer": "ACID compliance",
+    "category": "Features",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 3,
+    "text": "What is the equivalent of SQL tables in InfluxDB?",
+    "options": [
+      "Fields",
+      "Tags",
+      "Measurements",
+      "Points"
+    ],
+    "correct_answer": "Measurements",
+    "category": "Concepts",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 4,
+    "text": "Which programming language is NOT officially supported by InfluxDB's API?",
+    "options": [
+      "Python",
+      "Java",
+      "Ruby",
+      "PHP"
+    ],
+    "correct_answer": "Ruby",
+    "category": "API",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 5,
+    "text": "What is the default retention policy name in InfluxDB?",
+    "options": [
+      "default",
+      "autogen",
+      "infinity",
+      "standard"
+    ],
+    "correct_answer": "autogen",
+    "category": "Configuration",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 6,
+    "text": "Which format are timestamps stored in InfluxDB?",
+    "options": [
+      "Unix timestamp",
+      "ISO 8601",
+      "RFC 3339 UTC",
+      "Custom format"
+    ],
+    "correct_answer": "RFC 3339 UTC",
+    "category": "Data Types",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 7,
+    "text": "What is the purpose of the Write Ahead Log (WAL) in InfluxDB?",
+    "options": [
+      "Permanent storage",
+      "Data encryption",
+      "Temporary cache",
+      "Error logging"
+    ],
+    "correct_answer": "Temporary cache",
+    "category": "Architecture",
+    "difficulty": "Hard"
+  },
+  {
+    "id": 8,
+    "text": "Which attribute should be used as a tag in InfluxDB?",
+    "options": [
+      "Dynamic values",
+      "Frequently searched data",
+      "Non-string type data",
+      "Data used in functions"
+    ],
+    "correct_answer": "Frequently searched data",
+    "category": "Design",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 9,
+    "text": "What are the four sections of TSM files?",
+    "options": [
+      "Header, Data, Index, Footer",
+      "Header, Blocks, Index, Footer",
+      "Header, Content, Index, Meta",
+      "Header, Rows, Index, Footer"
+    ],
+    "correct_answer": "Header, Blocks, Index, Footer",
+    "category": "Storage",
+    "difficulty": "Hard"
+  },
+  {
+    "id": 10,
+    "text": "Which command shows the InfluxDB configuration?",
+    "options": [
+      "influx config",
+      "config show",
+      "influxd config",
+      "show config"
+    ],
+    "correct_answer": "influxd config",
+    "category": "Configuration",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 11,
+    "text": "What is the minimum number of meta nodes needed in an InfluxDB cluster?",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correct_answer": "3",
+    "category": "Clustering",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 12,
+    "text": "Which tool is used for processing real-time data and generating warnings in InfluxDB?",
+    "options": [
+      "Chronograf",
+      "Kapacitor",
+      "Grafana",
+      "Prometheus"
+    ],
+    "correct_answer": "Kapacitor",
+    "category": "Monitoring",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 13,
+    "text": "What type of backups does InfluxDB support?",
+    "options": [
+      "Incremental only",
+      "Full only",
+      "Differential only",
+      "Both incremental and full"
+    ],
+    "correct_answer": "Full only",
+    "category": "Operations",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 14,
+    "text": "Which port does the InfluxDB HTTP API run on by default?",
+    "options": [
+      "8080",
+      "8086",
+      "3000",
+      "9090"
+    ],
+    "correct_answer": "8086",
+    "category": "API",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 15,
+    "text": "What is the purpose of continuous queries in InfluxDB?",
+    "options": [
+      "Data backup",
+      "Similar to SQL stored procedures",
+      "Log rotation",
+      "Data compression"
+    ],
+    "correct_answer": "Similar to SQL stored procedures",
+    "category": "Concepts",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 16,
+    "text": "Which command is used to switch databases in InfluxDB?",
+    "options": [
+      "switch",
+      "use",
+      "change",
+      "select"
+    ],
+    "correct_answer": "use",
+    "category": "Commands",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 17,
+    "text": "What is a series in InfluxDB?",
+    "options": [
+      "A collection of data points",
+      "A collection of data sharing RP, measurement and tag set",
+      "A sequence of timestamps",
+      "A group of fields"
+    ],
+    "correct_answer": "A collection of data sharing RP, measurement and tag set",
+    "category": "Concepts",
+    "difficulty": "Hard"
+  },
+  {
+    "id": 18,
+    "text": "Which type of data should be stored as fields in InfluxDB?",
+    "options": [
+      "Indexed data",
+      "String metadata",
+      "Dynamic values",
+      "Static identifiers"
+    ],
+    "correct_answer": "Dynamic values",
+    "category": "Design",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 19,
+    "text": "What is the main use case for InfluxDB?",
+    "options": [
+      "Document storage",
+      "Graph relationships",
+      "Time-series analytics",
+      "Key-value storage"
+    ],
+    "correct_answer": "Time-series analytics",
+    "category": "Use Cases",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 20,
+    "text": "Which visualization tool is part of the InfluxData stack?",
+    "options": [
+      "Grafana",
+      "Kibana",
+      "Chronograf",
+      "Tableau"
+    ],
+    "correct_answer": "Chronograf",
+    "category": "Tools",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 21,
+    "text": "What type of queries are supported by the HTTP GET method?",
+    "options": [
+      "CREATE and DROP",
+      "SELECT and SHOW",
+      "INSERT and UPDATE",
+      "ALTER and DELETE"
+    ],
+    "correct_answer": "SELECT and SHOW",
+    "category": "API",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 22,
+    "text": "Which statement is used to copy data between measurements?",
+    "options": [
+      "COPY INTO",
+      "SELECT INTO",
+      "INSERT INTO",
+      "DUPLICATE INTO"
+    ],
+    "correct_answer": "SELECT INTO",
+    "category": "DML",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 23,
+    "text": "What is the primary storage engine used by InfluxDB?",
+    "options": [
+      "B-tree",
+      "LSM tree",
+      "TSM tree",
+      "Hash table"
+    ],
+    "correct_answer": "TSM tree",
+    "category": "Storage",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 24,
+    "text": "Which of these is NOT an aggregate function in InfluxDB?",
+    "options": [
+      "MEAN",
+      "MODE",
+      "VARIANCE",
+      "SPREAD"
+    ],
+    "correct_answer": "VARIANCE",
+    "category": "Functions",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 25,
+    "text": "What is the minimum number of data nodes required for high availability?",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correct_answer": "2",
+    "category": "Clustering",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 26,
+    "text": "Which field type is required for tag values?",
+    "options": [
+      "Integer",
+      "Float",
+      "String",
+      "Boolean"
+    ],
+    "correct_answer": "String",
+    "category": "Data Types",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 27,
+    "text": "What happens when a retention policy duration expires?",
+    "options": [
+      "Data is archived",
+      "Data is compressed",
+      "Data is deleted",
+      "Data is backed up"
+    ],
+    "correct_answer": "Data is deleted",
+    "category": "Retention",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 28,
+    "text": "Which endpoint is used to check InfluxDB's health?",
+    "options": [
+      "/health",
+      "/ping",
+      "/status",
+      "/check"
+    ],
+    "correct_answer": "/ping",
+    "category": "API",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 29,
+    "text": "What is the purpose of shard groups in InfluxDB?",
+    "options": [
+      "User management",
+      "Data backup",
+      "Logical container for shards",
+      "Query optimization"
+    ],
+    "correct_answer": "Logical container for shards",
+    "category": "Architecture",
+    "difficulty": "Hard"
+  },
+  {
+    "id": 30,
+    "text": "Which selector function returns randomly selected field values?",
+    "options": [
+      "RANDOM",
+      "SAMPLE",
+      "SELECT",
+      "CHOOSE"
+    ],
+    "correct_answer": "SAMPLE",
+    "category": "Functions",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 31,
+    "text": "What is the default shard group duration when retention policy duration is more than 6 months?",
+    "options": [
+      "24 hours",
+      "7 days",
+      "30 days",
+      "90 days"
+    ],
+    "correct_answer": "7 days",
+    "category": "Configuration",
+    "difficulty": "Hard"
+  },
+  {
+    "id": 32,
+    "text": "Which of these is a valid use case for InfluxDB?",
+    "options": [
+      "Social network graphs",
+      "DevOps monitoring",
+      "Document storage",
+      "User authentication"
+    ],
+    "correct_answer": "DevOps monitoring",
+    "category": "Use Cases",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 33,
+    "text": "What is the purpose of the LINE protocol in InfluxDB?",
+    "options": [
+      "Network communication",
+      "Data encryption",
+      "Text-based format for writing points",
+      "Error handling"
+    ],
+    "correct_answer": "Text-based format for writing points",
+    "category": "Protocols",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 34,
+    "text": "Which component is responsible for processing real-time data streams?",
+    "options": [
+      "Chronograf",
+      "InfluxDB",
+      "Kapacitor",
+      "Telegraph"
+    ],
+    "correct_answer": "Kapacitor",
+    "category": "Architecture",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 35,
+    "text": "What is the recommended approach for tag values containing large string information?",
+    "options": [
+      "Use them freely",
+      "Avoid them",
+      "Compress them",
+      "Split them"
+    ],
+    "correct_answer": "Avoid them",
+    "category": "Best Practices",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 36,
+    "text": "Which query returns the newest field value?",
+    "options": [
+      "NEWEST()",
+      "LAST()",
+      "LATEST()",
+      "END()"
+    ],
+    "correct_answer": "LAST()",
+    "category": "Functions",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 37,
+    "text": "What is the purpose of the meta node in InfluxDB clustering?",
+    "options": [
+      "Store actual data",
+      "Store system information",
+      "Handle queries",
+      "Manage backups"
+    ],
+    "correct_answer": "Store system information",
+    "category": "Clustering",
+    "difficulty": "Hard"
+  },
+  {
+    "id": 38,
+    "text": "Which security feature should be enabled in production environments?",
+    "options": [
+      "Basic auth",
+      "HTTPS",
+      "IP filtering",
+      "Token auth"
+    ],
+    "correct_answer": "HTTPS",
+    "category": "Security",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 39,
+    "text": "What is the purpose of the GROUP BY time() function?",
+    "options": [
+      "Sort by timestamp",
+      "Group data into time intervals",
+      "Calculate time differences",
+      "Convert time zones"
+    ],
+    "correct_answer": "Group data into time intervals",
+    "category": "Functions",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 40,
+    "text": "Which command is used to restore a backup?",
+    "options": [
+      "influx restore",
+      "influxd restore",
+      "restore db",
+      "db restore"
+    ],
+    "correct_answer": "influxd restore",
+    "category": "Operations",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 41,
+    "text": "What is the recommended way to handle highly dynamic tag values?",
+    "options": [
+      "Use them as tags",
+      "Use them as fields",
+      "Split them",
+      "Compress them"
+    ],
+    "correct_answer": "Use them as fields",
+    "category": "Best Practices",
+    "difficulty": "Hard"
+  },
+  {
+    "id": 42,
+    "text": "Which endpoint is used for writing data to InfluxDB?",
+    "options": [
+      "/write",
+      "/data",
+      "/insert",
+      "/post"
+    ],
+    "correct_answer": "/write",
+    "category": "API",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 43,
+    "text": "What happens when using GROUP BY *?",
+    "options": [
+      "Groups by time",
+      "Groups by all fields",
+      "Groups by all tags",
+      "Groups by measurement"
+    ],
+    "correct_answer": "Groups by all tags",
+    "category": "Queries",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 44,
+    "text": "Which function calculates the area under the curve?",
+    "options": [
+      "AREA()",
+      "INTEGRAL()",
+      "CURVE()",
+      "SUM()"
+    ],
+    "correct_answer": "INTEGRAL()",
+    "category": "Functions",
+    "difficulty": "Hard"
+  },
+  {
+    "id": 45,
+    "text": "What is the main purpose of retention policies?",
+    "options": [
+      "Data compression",
+      "Access control",
+      "Data lifecycle management",
+      "Query optimization"
+    ],
+    "correct_answer": "Data lifecycle management",
+    "category": "Management",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 46,
+    "text": "Which HTTP method is used for database DDL operations in InfluxDB?",
+    "options": ["GET", "PUT", "POST", "DELETE"],
+    "correct_answer": "POST",
+    "category": "API",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 47,
+    "text": "What does TSM stand for in InfluxDB?",
+    "options": ["Time Series Management", "Time Structured Merge", "Time Storage Model", "Time Series Memory"],
+    "correct_answer": "Time Structured Merge",
+    "category": "Architecture",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 48,
+    "text": "Which Python package is required to interact with InfluxDB?",
+    "options": ["influx", "influxpy", "influxdb", "pyinflux"],
+    "correct_answer": "influxdb",
+    "category": "API",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 49,
+    "text": "What is the default port for clustering operations in InfluxDB?",
+    "options": ["8086", "8088", "8089", "8090"],
+    "correct_answer": "8088",
+    "category": "Clustering",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 50,
+    "text": "Which function returns the Nth percentile field value?",
+    "options": ["PERCENT()", "PERCENTILE()", "NTH()", "QUANTILE()"],
+    "correct_answer": "PERCENTILE()",
+    "category": "Functions",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 51,
+    "text": "What happens when you drop a retention policy?",
+    "options": [
+      "Only metadata is deleted",
+      "Data is archived",
+      "All measurements and data are permanently deleted",
+      "Policy is deactivated but data remains"
+    ],
+    "correct_answer": "All measurements and data are permanently deleted",
+    "category": "Management",
+    "difficulty": "Hard"
+  },
+  {
+    "id": 52,
+    "text": "Which tool provides a UI for Kapacitor?",
+    "options": ["Grafana", "Chronograf", "Telegraf", "Kibana"],
+    "correct_answer": "Chronograf",
+    "category": "Tools",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 53,
+    "text": "What is the purpose of the 'fill()' option in GROUP BY queries?",
+    "options": [
+      "Add missing data points",
+      "Fill empty time intervals",
+      "Populate null values",
+      "Complete partial data"
+    ],
+    "correct_answer": "Fill empty time intervals",
+    "category": "Queries",
+    "difficulty": "Hard"
+  },
+  {
+    "id": 54,
+    "text": "Which command shows all measurements in a database?",
+    "options": ["SHOW MEASUREMENTS", "LIST MEASUREMENTS", "GET MEASUREMENTS", "SELECT MEASUREMENTS"],
+    "correct_answer": "SHOW MEASUREMENTS",
+    "category": "Commands",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 55,
+    "text": "What is the purpose of the 'SLIMIT' clause?",
+    "options": [
+      "Limit series returned",
+      "Limit points per series",
+      "Limit total points",
+      "Limit time range"
+    ],
+    "correct_answer": "Limit series returned",
+    "category": "Queries",
+    "difficulty": "Hard"
+  },
+  {
+    "id": 56,
+    "text": "Which file contains the main InfluxDB configuration?",
+    "options": [
+      "influx.conf",
+      "influxdb.conf",
+      "config.inf",
+      "db.conf"
+    ],
+    "correct_answer": "influxdb.conf",
+    "category": "Configuration",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 57,
+    "text": "What is the default replication factor in the autogen retention policy?",
+    "options": ["0", "1", "2", "3"],
+    "correct_answer": "1",
+    "category": "Configuration",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 58,
+    "text": "Which function would you use to find the most frequent value in a field?",
+    "options": ["FREQUENT()", "MODE()", "COMMON()", "TOP()"],
+    "correct_answer": "MODE()",
+    "category": "Functions",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 59,
+    "text": "What type of database is InfluxDB primarily?",
+    "options": [
+      "Document store",
+      "Time series database",
+      "Graph database",
+      "Column-oriented database"
+    ],
+    "correct_answer": "Time series database",
+    "category": "Basics",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 60,
+    "text": "Which component is responsible for data collection in the TICK stack?",
+    "options": ["Chronograf", "InfluxDB", "Kapacitor", "Telegraf"],
+    "correct_answer": "Telegraf",
+    "category": "Architecture",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 61,
+    "text": "What is the maximum number of points returned by default in a query?",
+    "options": ["100", "1000", "10000", "No limit"],
+    "correct_answer": "10000",
+    "category": "Queries",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 62,
+    "text": "Which operation is NOT supported by the HTTP GET method?",
+    "options": ["SELECT", "SHOW", "CREATE", "LIMIT"],
+    "correct_answer": "CREATE",
+    "category": "API",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 63,
+    "text": "What is the purpose of the debug/requests endpoint?",
+    "options": [
+      "Log errors",
+      "Monitor query and write requests",
+      "Debug database issues",
+      "Test API connections"
+    ],
+    "correct_answer": "Monitor query and write requests",
+    "category": "API",
+    "difficulty": "Hard"
+  },
+  {
+    "id": 64,
+    "text": "Which statement is used to change an existing retention policy?",
+    "options": ["MODIFY", "UPDATE", "ALTER", "CHANGE"],
+    "correct_answer": "ALTER",
+    "category": "Management",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 65,
+    "text": "What is the recommended way to store boolean values in InfluxDB?",
+    "options": ["As tags", "As fields", "As measurements", "As timestamps"],
+    "correct_answer": "As fields",
+    "category": "Best Practices",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 66,
+    "text": "Which function calculates the difference between maximum and minimum values?",
+    "options": ["DIFF()", "RANGE()", "SPREAD()", "DELTA()"],
+    "correct_answer": "SPREAD()",
+    "category": "Functions",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 67,
+    "text": "What is the purpose of the NO_PROXY environment variable when using Python client?",
+    "options": [
+      "Disable security",
+      "Allow local connections",
+      "Block external access",
+      "Enable encryption"
+    ],
+    "correct_answer": "Allow local connections",
+    "category": "API",
+    "difficulty": "Hard"
+  },
+  {
+    "id": 68,
+    "text": "Which command is used to create a backup of a specific database?",
+    "options": [
+      "influx backup",
+      "influxd backup -database",
+      "backup database",
+      "db backup"
+    ],
+    "correct_answer": "influxd backup -database",
+    "category": "Operations",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 69,
+    "text": "What is the main advantage of using tags over fields?",
+    "options": [
+      "Better compression",
+      "Faster queries through indexing",
+      "More data types supported",
+      "Larger storage capacity"
+    ],
+    "correct_answer": "Faster queries through indexing",
+    "category": "Performance",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 70,
+    "text": "Which of these is NOT a valid endpoint in InfluxDB's HTTP API?",
+    "options": ["/ping", "/query", "/write", "/delete"],
+    "correct_answer": "/delete",
+    "category": "API",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 71,
+    "text": "What happens when you write to a measurement that doesn't exist?",
+    "options": [
+      "Error occurs",
+      "Measurement is automatically created",
+      "Data is buffered",
+      "Write is rejected"
+    ],
+    "correct_answer": "Measurement is automatically created",
+    "category": "Operations",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 72,
+    "text": "Which feature allows you to automatically downsample data over time?",
+    "options": [
+      "Continuous Queries",
+      "Retention Policies",
+      "Auto Sampling",
+      "Time Aggregation"
+    ],
+    "correct_answer": "Continuous Queries",
+    "category": "Features",
+    "difficulty": "Hard"
+  },
+  {
+    "id": 73,
+    "text": "What is the default location of InfluxDB's data directory on Linux?",
+    "options": [
+      "/var/lib/influxdb",
+      "/etc/influxdb",
+      "/usr/local/influxdb",
+      "/opt/influxdb"
+    ],
+    "correct_answer": "/var/lib/influxdb",
+    "category": "Configuration",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 74,
+    "text": "Which operator is used to match exact tag values?",
+    "options": ["LIKE", "=", "MATCH", "=="],
+    "correct_answer": "=",
+    "category": "Queries",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 75,
+    "text": "What is the purpose of the OFFSET clause in queries?",
+    "options": [
+      "Skip time intervals",
+      "Skip initial results",
+      "Adjust timezone",
+      "Change data alignment"
+    ],
+    "correct_answer": "Skip initial results",
+    "category": "Queries",
     "difficulty": "Medium"
   }
 ]
