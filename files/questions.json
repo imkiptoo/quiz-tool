@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "text": "What is the capital of France?",
+    "options": ["London", "Berlin", "Paris", "Madrid"],
+    "correct_answer": "Paris",
+    "category": "Geography",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 2,
+    "text": "Which planet is closest to the Sun?",
+    "options": ["Venus", "Mercury", "Mars", "Earth"],
+    "correct_answer": "Mercury",
+    "category": "Science",
+    "difficulty": "Medium"
+  }
+]
